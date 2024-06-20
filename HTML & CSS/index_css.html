@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{  /* (*-universal tag)*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .a{
+            color: red;
+            font-family: sans-serif;
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            text-transform: capitalize;
+            letter-spacing: 5px;
+            font-size: 40px;
+            text-shadow: 2px 2px 8px yellow;
+            border: 2px solid blue;
+            margin: 15px 10px;/*x(top-bottom) y(left-right)*/
+        }
+
+        /* #x{
+            text-transform: lowercase;
+        } */
+    </style>
+
+</head>
+<body>
+    
+<!--There are three types of css:
+    1 inline css
+    2 internal css
+    3 extrnal css -->
+
+<!--Selectors for css
+    1 class Selectors
+    2 id Selectors -> id should be always unique
+    3 psudo Selectors -->
+
+    <!-- DRY Do not repeat yourself -->
+
+    <!-- <h1 style="color: red; text-align: center; background-color: black; font-family: sans-serif; padding: 20px; text-transform: capitalize; text-shadow: 2px 2px 8px yellow; letter-spacing: 4px; font-size: 40px; border-radius: 10px;">This is my tag</h1> 
+
+    <h1 style="color: red; text-align: center; background-color: black; font-family: sans-serif; padding: 20px; text-transform: capitalize; text-shadow: 2px 2px 8px yellow; letter-spacing: 4px; font-size: 40px; border-radius: 10px;">This is a nomal tag</h1> 
+    
+    <h1 style="color: red; text-align: center; background-color: black; font-family: sans-serif; padding: 20px; text-transform: capitalize; text-shadow: 2px 2px 8px yellow; letter-spacing: 4px; font-size: 40px; border-radius: 10px;">This is on;y tag</h1>  -->
+    
+    <h1 class="a">hello</h1>
+    <h1 class="a">this is a tag</h1>
+    <p class="a" id="x">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla libero repellendus ipsa.</p>
+    </body>
+    </html>
