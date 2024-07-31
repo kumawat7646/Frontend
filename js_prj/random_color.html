@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 50vh;
+
+        }
+        button{
+            width: 200px;
+            height: 100px;
+            font-size: 50px;
+
+        }
+    </style>
+</head>
+<body id="body">
+    <input type="text">
+    <button>Click</button>
+
+
+    <script>
+        let inp = document.querySelector("input")
+        document.querySelector("button").onclick = function(){
+
+            // setInterval(()=>{
+
+                let color = `rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}) `
+        
+                document.getElementById("body").style.backgroundColor= color;
+
+                inp.value = color
+            // })
+
+     }
+
+
+
+    </script>
+</body>
+</html>

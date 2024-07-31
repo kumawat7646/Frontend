@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="input">
+    <button id="submit">Submit</button>
+    <button id="print">Print</button>
+    <p id="h"></p>
+
+    <script>
+        let arr = [];
+
+            document.querySelector("#submit").onclick = () =>{
+
+                let val = document.querySelector("input").value
+                document.querySelector("input").value = ''
+                document.querySelector("input").focus()
+                arr.push(val)
+            }
+
+            let i = 0;
+
+            document.querySelector("#print").onclick = () =>{
+            // setInterval(()=>{
+                    // console.log(arr[i]);
+                    document.getElementById("h").innerHTML += arr[i] + "<br>";
+                    i++;
+                
+            // })
+        }
+
+    </script>
+</body>
+</html>

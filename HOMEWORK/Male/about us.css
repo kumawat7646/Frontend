@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* Sign-up CSS */
+
+.sign-up{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+}
+#sign-h6{
+    color: white;
+    margin-left: -50px;
+    margin-top: -145px;
+    letter-spacing: 1px;
+}
+/* .sign-box{
+    color:blue;
+
+} */
+
+
+/* header CSS */
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    margin: 30px;
+    margin-left: 70px;
+}
+
+.nav-items{
+    display: flex;
+    margin-left: 13%;
+    
+}
+
+.logo-a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 32px 25px;
+    cursor: pointer;
+}
+#home{
+    text-decoration:underline 2px red ;
+
+}
+
+.logo-cart{
+    height: 80px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+/* Container CSS */
+.container{
+    height: 140px;
+    width: 100%;
+    background-color:#f3f2ee;
+    padding: 40px 0;
+}
+
+.container-h4{
+    font-weight: 545;
+    font-size: x-large;
+    padding-left: 70px;
+}
+
+.container-a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    padding-left: 70px;
+    line-height: 35px;
+}
+
+.container-p{
+    color: grey;
+    font-size: small;
+    padding-left: 120px;
+    margin-top: -25px;
+}
+
+/* About CSS */
+.about{
+    height: 870px;
+    width: 100%;
+}
+.about-img{
+    padding: 44px;
+    padding-top: 90px;
+}
+
+.about_item{
+    height: 150px;
+    width: 1170px;
+    display: flex;
+    margin-left: 44px;
+    margin-top: -20px;
+}
+
+.about-h4{
+    font-weight: 545;
+    font-size: x-large;
+}
+#about-h4{
+    margin-left: 60px;
+}
+
+.about-p{
+    color: grey;
+    font-size: small;
+    display: inline-block;
+    line-height: 21px;
+    word-spacing: 4px;
+    margin-top: 10px;
+    font-weight:540;
+}
+#about-p{
+    margin-left: 60px;
+
+}
+
+/* Testimonial CSS */
+.testimonial{
+    height: 650px;
+    width: 100%;
+    background-color: #f3f2ee;
+    display: flex;
+}
+
+.testimonial-text{
+    width: 55%;
+    font-size: large;
+
+}
+.mark{
+font-size: large;
+color: red;
+}
+i{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    
+}
+.testimonial-img{
+    height: 600px;
+    width: 700px;
+    background-image: url(/aboutimg/testimonial-pic.jpeg);
+    background-position: center;
+}
+
+/* Counter CSS */
+.counter{
+    height: 230px;
+    width: 100%;
+    
+}
+.counter_items{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-right: 130px;
+    
+}
+.counter-items{
+    display: flex;
+    margin-left: 130px;
+}
+
+#counter-h1{
+    font-size: 60px;
+    color: #111111;
+    font-weight: 545;
+    font-family: "Nunito Sans", sans-serif;
+}
+#counter-p{
+    line-height: 25px;
+    padding-top: 11px;
+    margin-left: 10px;
+    color: grey;
+    font-weight:54;
+}
+
+.counter-hr{
+    width: 90%;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+
+/* Team CSS */
+
+.team{
+    height: 642px;
+    width: 100%;
+}
+
+.team_heading{
+display: flex;
+justify-content: center;
+}
+
+#team-p{
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    position: absolute;
+    padding-top: 90px;
+}
+#team-h1{
+    padding-top: 125px;
+}
+
+.about-team{
+    height: 350px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team-1{
+    height: 350px;
+    width: 270px;
+}
+
+#team1{
+    background-image: url(/aboutimg/team-1.jpeg);
+    background-size: cover;
+}
+#team2{
+    background-image: url(/aboutimg/team-2.jpeg);
+    background-size: cover;
+}
+#team3{
+    background-image: url(/aboutimg/team-3.jpeg);
+    background-size: cover;
+}
+#team4{
+    background-image: url(/aboutimg/team-4.jpeg);
+    background-size: cover;
+}
+
+.team-text{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 20px;
+}
+
+#teamtext-h4{
+    font-weight: 540;
+    font-size: x-large;
+}
+
+#teamtext-p{
+    color: grey;
+    display: inline-block;
+}

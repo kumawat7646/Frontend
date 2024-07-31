@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .frame{
+            width: 750px;
+            height: 500px;
+            margin-top: 7%;
+            overflow: hidden;
+            box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
+            
+        }
+
+        .slider{
+            display: flex;
+            transition: 800ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="prev">Prev</button>
+        <div class="frame">
+            <div class="slider">
+                <img src="https://picsum.photos/id/236/750/500" class="image" alt="">
+                <img src="https://picsum.photos/id/240/750/500" class="image" alt="">
+                <img src="https://picsum.photos/id/200/750/500" class="image" alt="">
+                <img src="https://picsum.photos/id/230/750/500" class="image" alt="">
+            </div>
+        </div>
+        <button id="next">Next</button>
+    </div>
+
+
+    <script>
+        const prev = document.querySelector("#prev")
+        const next = document.querySelector("#next")
+        const slider = document.querySelector(".slider")
+        const images = document.querySelectorAll(".image")
+
+        slideNumber = 1;
+
+        next.addEventListener('click',()=>{
+            if(slideNumber<images.length){
+                slider.style.transform = `translateX(-${slideNumber*750}px)`
+                slideNumber++;
+            }
+            else{
+                slider.style.transform = `translateX(0px)`
+                slideNumber=1;
+            }
+        })
+
+        // prev.addEventListener('click',()=>{
+        //     if(slideNumber<images.length){
+        //         slider.style.transform = `translateX(${(slideNumber-2)*750}px)`
+        //         slideNumber--;
+        //     }
+        //     else{
+        //         slider.style.transform = `translateX(${(images.length-1)*750}px)`
+        //         slideNumber=images.length;
+        //     }
+        // })
+    </script>
+</body>
+</html>

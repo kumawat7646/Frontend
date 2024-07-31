@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color DOM</title>
+    <style>
+        #body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #white{
+            height: 400px;
+            width:450px;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 50px;
+            overflow:auto;
+
+        }
+        #h1{
+            
+            margin-left: 20px;
+        }
+        #select{
+            margin-left: 20px;
+            height: 30px;
+            width: 200px;
+        }
+        p{
+            margin-left: 20px;
+        }
+        #red{
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+            border: none;
+            display: inline-block;
+            background-color: red;
+            margin-left: 20px;
+        }
+        #yellow{
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+            border: none;
+            display: inline-block;
+            background-color: yellow;
+        }
+        #green{
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+            border: none;
+            display: inline-block;
+            background-color: green;
+        }
+        #pink{
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+            border: none;
+            display: inline-block;
+            background-color: pink;
+        }
+
+
+        button{
+            background-color: greenyellow;
+            border: none;
+            height: 30px;
+            width: 50px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <div id="white">
+        <h1 id="h1">Select Your Domain:</h1>
+        <select name="" id="select">
+            <option value="">--Make a choice--</option>
+            <option id="react" value="react">React</option>
+            <option id="django" value="django">Django</option>
+            <option id="angular" value="angular">Angular</option>
+            <option id="aws" value="aws">AWS</option>
+        </select>
+        <p id="para"></p>
+
+        
+
+        <script>
+            document.getElementById("select").oninput = function (){
+             let sel =   document.getElementById("select").value
+             let paragraph = document.getElementById("para")
+
+             if(sel === "angular"){
+                paragraph.innerText = "This tutorial introduces you to the essentials of Angular by walking you through building an e-commerce site with a catalog, shopping cart, and check-out form."
+             }
+             if(sel === "react"){
+                paragraph.innerText ="React is a JavaScript library for building user interfaces, which allows developers to create web and native applications using a component-based architecture. It's known for its efficiency and flexibility, enabling developers to build complex UIs from encapsulated components that manage their own state."
+             }
+             if(sel === "django"){
+                paragraph.innerText = "Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, Django takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It is free and open source, has a thriving and active community, great documentation, and many options for free and paid-for support."
+             }
+             if(sel === "aws"){
+                paragraph.innerText = "Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster."
+             }
+             else{
+                }
+            }
+
+
+
+
+
+
+        </script>
+
+
+        <br>
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="pink"></div>
+        <script>
+            document.getElementById("red").onclick = function (){
+                document.getElementById("body").style.backgroundColor = "red";
+            }
+            document.getElementById("yellow").onclick = function (){
+                document.getElementById("body").style.backgroundColor = "yellow";
+            }
+            document.getElementById("green").onclick = function (){
+                document.getElementById("body").style.backgroundColor = "green";
+            }
+            document.getElementById("pink").onclick = function (){
+                document.getElementById("body").style.backgroundColor = "pink";
+            }
+        </script>
+
+        <br>
+
+        <button id="upper">upper</button>
+        <button id="lower">lower</button>
+        <script>
+            document.getElementById("upper").onclick = function () {
+                document.getElementById("para").style.textTransform = "uppercase";
+            }
+            document.getElementById("lower").onclick = function () {
+                document.getElementById("para").style.textTransform = "lowercase";
+            }
+        </script>
+
+
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+        <script>
+            let counter = 16;
+            document.getElementById("plus").onclick = function (){
+                document.getElementById("para").style.fontSize = counter + "px";
+                counter++;
+            }
+            document.getElementById("minus").onclick = function () {
+                document.getElementById("para").style.fontSize = counter + "px";
+                counter--;
+            }
+        </script>
+
+    </div>
+</body>
+</html>

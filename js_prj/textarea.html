@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            height: 150px;
+            width: 300px;
+        }
+
+        #textarea2{
+            height: 150px;
+            width: 900px;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="hello" id="textarea1"></textarea>
+    <br>
+    <h1>Css Properties</h1>
+        <input type="text" id="color" placeholder="color">  
+        <input type="text" id="bgc" placeholder="background color">
+        <input type="text" id="fs" placeholder="Font size">
+<br><br>
+    <div id="textarea2"></div>
+
+    <h2 id="h">Total letters:</h2>
+
+    <script>
+             document.getElementById("textarea1").oninput= function(){
+                 let txt = document.getElementById("textarea1").value
+                 document.getElementById("textarea2").innerHTML=txt;
+                 let total = document.getElementById("textarea1").value;
+                 document.getElementById("h").innerHTML="Total Letters : "+total.length;
+             }
+             document.getElementById("color").oninput= function(){
+                 let color= document.getElementById("color").value
+                 document.getElementById("textarea2").style.color=color;
+             }
+             document.getElementById("bgc").oninput= function(){
+                 let bgc = document.getElementById("bgc").value
+                 document.getElementById("textarea2").style.backgroundColor=bgc;
+             }
+             document.getElementById("fs").oninput= function(){
+                 let fs = document.getElementById("fs").value
+                 document.getElementById("textarea2").style.fontSize=fs+"px";
+             }
+             
+              
+
+    </script>
+
+</body>
+</html>

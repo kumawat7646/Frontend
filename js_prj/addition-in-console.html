@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addition in console</title>
+
+    <style>
+        img{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button id="btn">click</button>
+    <h1 >Answer:</h1>
+    <h1 id="h1"></h1>
+
+    <script>
+        document.getElementById("btn").onclick = function () {
+            let a= Number(document.getElementById("inp1").value);
+            let b= Number(document.getElementById("inp2").value);
+            // jb hme kisi ki value chahiye hoti h tb h (.value) ka use krte h.
+            document.getElementById("h1").innerText = a+b;
+        }
+    </script>
+
+
+
+        <hr><hr><br><br>
+
+
+
+
+        <input type="text" id="inp1">
+    <input type="text" id="inp2">
+
+    <select id="select">
+        <option>None</option>
+        <option value="add">Add</option>
+        <option value="minus">Minus</option>
+        <option value="divide">Divide</option>
+    </select>
+
+    <h1 id="hh"></h1>
+
+    <script>
+        document.getElementById("select").onclick = function(){
+            let val = document.getElementById("select").value;
+            
+            let a= Number(document.getElementById("inp1").value);
+            let b= Number(document.getElementById("inp2").value);
+
+
+            if(val=="add")
+            {
+                // console.log(a+b);
+                document.getElementById("hh").innerHTML = a+b;
+            }
+
+            else if(val=="minus")
+            {
+                // console.log(a-b);
+                document.getElementById("hh").innerHTML = a-b;
+            }
+            else if(val=="divide")
+            {
+                // console.log(a/b);
+                document.getElementById("hh").innerHTML = a/b;
+            }
+        }
+    </script>
+
+
+
+        <hr><hr><br><br>
+
+        
+
+
+        <button id="add">ADD</button>
+        <button id="minus">MINUS</button>
+        <button id="divide">DIVIDE</button>
+
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+
+        <h1 id="h"></h1>
+
+        <br><br>
+
+        <img src="blog.jpeg" alt="" id="img">
+
+        <script>
+            let a=10;
+            let b=20;
+            
+            document.getElementById("add").onclick = function () {
+                document.getElementById("h").innerHTML = a+b;    
+                // innerHTML and innerText are same to show output on webpage 
+                // document.write se ek new page open hota h
+            }
+            document.getElementById("minus").onclick = function () {
+                document.getElementById("h").innerText = a-b;
+            }
+            document.getElementById("divide").onclick = function () {
+                document.getElementById("h").innerText = a/ b;
+            }
+
+            document.getElementById("show").onclick = function(){
+                // document.getElementById("img").style.display= "block";
+
+                if(a>0)
+                {
+                    document.getElementById("img").style.display= "block"
+                }
+
+                else{
+                    document.getElementById("img").innerText = "please enter positive integer"
+                }
+            }
+
+            document.getElementById("hide").onclick = function(){
+                document.getElementById("img").style.display= "none";
+            }
+
+        </script>
+        
+    
+</body>
+</html>

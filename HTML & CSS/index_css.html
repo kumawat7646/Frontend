@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS</title>
 
     <style>
         *{  /* (*-universal tag)*/
@@ -13,27 +13,46 @@
             
         }
 
-        .a{
+        /* .a{
             color: red;
             font-family: sans-serif;
             background-color: black;
             text-align: center;
             padding: 20px;
             text-transform: capitalize;
-            letter-spacing: 5px;
+            letter-spacing: 5px; -> it give space between letters
+            line-height: -> its for space between lines of paragrapgh
             font-size: 40px;
             text-shadow: 2px 2px 8px yellow;
             border: 2px solid blue;
-            margin: 15px 10px;/*x(top-bottom) y(left-right)*/
-        }
+            margin: 15px 10px;/*x(top-bottom) y(left-right)
+        } */
 
         /* #x{
-            text-transform: lowercase;
+            text-transform: lowercase;    
         } */
+
+        /* background{
+            background: rgba(red, green, blue, alpha);   this is for use to fade the background color
+            opacity:0.5; it is used between 0 to 1 only to fade the whole container color
+        } */
+        
+
+        .container{
+            display: flex;
+        }
+
+        header{
+            display: flex;
+        }
+
+        
+
     </style>
 
 </head>
 <body>
+
     
 <!--There are three types of css:
     1 inline css
@@ -47,14 +66,43 @@
 
     <!-- DRY Do not repeat yourself -->
 
-    <!-- <h1 style="color: red; text-align: center; background-color: black; font-family: sans-serif; padding: 20px; text-transform: capitalize; text-shadow: 2px 2px 8px yellow; letter-spacing: 4px; font-size: 40px; border-radius: 10px;">This is my tag</h1> 
+    <!-- <h1 style="color: red; 
+     text-align: center; 
+     background-color: black; 
+     font-family: sans-serif; 
+     padding: 20px; 
+     text-transform: capitalize; 
+     text-shadow: 2px 2px 8px yellow; 
+     letter-spacing: 4px; 
+     font-size: 40px; 
+     border-radius: 10px;">This is my tag</h1> 
 
     <h1 style="color: red; text-align: center; background-color: black; font-family: sans-serif; padding: 20px; text-transform: capitalize; text-shadow: 2px 2px 8px yellow; letter-spacing: 4px; font-size: 40px; border-radius: 10px;">This is a nomal tag</h1> 
     
     <h1 style="color: red; text-align: center; background-color: black; font-family: sans-serif; padding: 20px; text-transform: capitalize; text-shadow: 2px 2px 8px yellow; letter-spacing: 4px; font-size: 40px; border-radius: 10px;">This is on;y tag</h1>  -->
     
-    <h1 class="a">hello</h1>
+    <!-- <h1 class="a">hello</h1>
     <h1 class="a">this is a tag</h1>
-    <p class="a" id="x">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla libero repellendus ipsa.</p>
+    <p class="a" id="x">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla libero repellendus ipsa.</p> -->
+    
+    <!-- CSS of backgroung-img 
+    <style>
+        .one{
+            background-size: cover; ->for full cover of container;
+            background-repeat: no-repeat; -> for no repeatation of img;
+            background-position: center; -> the center position of img always remain center
+            background-attachment: fixed; -> in this the position will fixed and the text and other items go overthrough him
+            opacity: 0 to 1 and all -> it used for dull the img and for overlap the bg-color over the img 
+        }
+    </style>
+     -->
+    <div class="conatiner">
+        <header>
+            <div class="one"></div>
+            <div class="two"></div>
+        </header>
+    </div>
+
+
     </body>
     </html>

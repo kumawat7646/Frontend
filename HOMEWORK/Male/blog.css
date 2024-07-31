@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Sign-up CSS */
+
+.sign-up{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+}
+#sign-h6{
+    color: white;
+    margin-left: -50px;
+    margin-top: -145px;
+    letter-spacing: 1px;
+}
+/* .sign-box{
+    color:blue;
+
+} */
+
+
+/* header CSS */
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    margin: 30px;
+    margin-left: 70px;
+}
+
+.nav-items{
+    display: flex;
+    margin-left: 13%;
+    
+}
+
+.logo-a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 32px 25px;
+    cursor: pointer;
+}
+#blog{
+    text-decoration:underline 2px red ;
+
+}
+
+.logo-cart{
+    height: 80px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+/* Banner CSS */
+.banner{
+    height: 287px;
+    width: 100%;
+    background-image: url(/blogimg/breadcrumb-bg.jpeg);
+    background-size: cover;
+}
+.banner-h1{
+    font-family:  "Nunito Sans", sans-serif;
+    letter-spacing: 2px;
+    font-size: 45px;
+    color: white;
+    height: 100%;
+    position: relative;  
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+/* Container CSS */
+.container{
+    height: 1500px;
+    width: 100%;
+    border:1px solid black;
+    margin-top: 80px;
+    display: flex   ;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 300px;
+    width: 290px;
+    background-color: red;
+    flex-grow: 1;
+    margin: 30px;
+} 
+
+#box1{
+    background-image: url(/blogimg/blog-1.jpeg);
+    background-size: cover;
+}
+#box2{
+    background-image: url(/blogimg/blog-2.jpeg);
+    background-size: cover;
+}
+#box3{
+    background-image: url(/blogimg/blog-3.jpeg);
+    background-size: cover;
+}
+#box4{
+    background-image: url(/blogimg/blog-4.jpeg);
+    background-size: cover;
+}
+#box5{
+    background-image: url(/blogimg/blog-5.jpeg);
+    background-size: cover;
+}
+#box6{
+    background-image: url(/blogimg/blog-6.jpeg);
+    background-size: cover;
+}
+#box7{
+    background-image: url(/blogimg/blog-7.jpeg);
+    background-size: cover;
+}
+#box8{
+    background-image: url(/blogimg/blog-8.jpeg);
+    background-size: cover;
+}
+#box9{
+    background-image: url(/blogimg/blog-9.jpeg);
+    background-size: cover;
+}
+
+.container-text{
+    height: 1200px;
+    width: 100%;
+    border:2px solid black;
+    margin-top: -1200px;
+    display: flex   ;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.text-box{
+    height: 170px;
+    width: 260px;
+    background-color: white;
+    flex-grow: 1;
+    margin: 55px;
+    margin-top: 90px;
+    text-transform: capitalize;
+    padding: 25px;
+
+} 
+span{
+    color: #3d3d3d;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+    /* margin: 25px; */
+}
+h3{
+    line-height: 20px;
+    font-weight: 410px;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 27px;
+}
+
+a{
+    font-size: 12px;
+    font-family:sans-serif;
+    color: black;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    ;
+}
+
+a:after{
+    content: '';
+    position: absolute;
+    text-decoration: underline 2px red;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform o.25s ease-out;
+}
+
+a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+}
+
+/* footer CSS */
+
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: #111111;
+    margin-top: 200px;
+}
+
+.footer-logo{
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 60px;   
+}
+
+.footer-p{ 
+    color:  #b7b7b7;
+    line-height: 24px;
+    letter-spacing: 1;
+    font-size: 13px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 340;
+    margin-left: -22px;
+    margin-top: -10px;
+}
+
+.pay-img{
+    margin-left: 57px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.footer-h2-1{
+    color:aliceblue;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 430px;
+    margin-top: -170px;
+    letter-spacing: 1px;
+}
+
+#p1{
+    margin-left: -80px;
+    margin-top: 13px;
+    color:  #b7b7b7;
+}
+.footer-h2-2{
+    color:aliceblue;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 670px;
+    margin-top: -170px;
+    letter-spacing: 1px;
+}
+
+#p2{
+    margin-left: 590px;
+    margin-top: 13px;
+    color:  #b7b7b7;
+}
+
+.footer-h2-3{
+    color:aliceblue;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 970px;
+    margin-top: -167px;
+    letter-spacing: 1px;
+}
+
+#p-ls{
+    margin-left: 890px;
+    margin-top: 13px;
+}
+
+#footer-mail{
+    background-color: #111111;
+    border: none;
+    text-decoration: underline 2px white;
+    width: 250px;
+    margin-left: 940px;
+}
+
+.hr{
+    height: 100px;
+    width: 90%;
+    margin-top: 120px;
+    margin-left: 4.5%;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+#p-hr{
+    color:  #b7b7b7;
+    margin-left: 180px;
+}
+
+#p-hr2{
+    color: red;
+    font-weight:700;
+    margin-left: 670px;
+    margin-top: -27px;
+}

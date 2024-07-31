@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        let obj = {
+            id:101,
+            fname :"mohit",
+            lname:"sharma",
+            age:38,
+            city:"jaipur",
+            mobile:123456789,
+            skills:["c","c++","python","mern"],
+            fullname:function(){//arrow function me [this=behrupiya of object] kaam nhi krta
+                console.log(this.fname,this.lname);
+            },
+            marks:{
+                physics:85,
+                maths:75,
+                chemistry:60,
+            }
+        }
+        */
+
+        // console.log(obj);
+        // console.log(fname);we cant call particular
+        // console.log(obj.lname);
+        // console.log(obj["mobile"]);
+        
+        //eske andr [for of]loop nhi chlta
+        // for(let i in obj)
+        // {
+        //     console.log(i,obj[i]);
+        // }
+
+        // console.log(obj.marks);
+        // console.log(obj.marks["physics"]);
+
+        // c/onsole.log(obj.fullname());
+
+
+
+
+    //====>>>>> array of objects
+
+        let array_obj = [
+        {
+            id:101,
+            fname :"mohit",
+            lname:"sharma",
+            age:16,
+            city:"jaipur",
+            mobile:123456789,
+            skills:["c","c++","python","mern"],
+            fullname:function(){//arrow function me [this] kaam nhi krta
+                console.log(this.fname,this.lname);
+            },
+            marks:{
+                physics:85,
+                maths:75,
+                chemistry:60,
+            }
+        },
+        {
+            id:102,
+            fname :"kohit",
+            lname:"ma",
+            age:28,
+            city:"jai",
+            mobile:123456789,
+            skills:["c","c++","python","mern"],
+            fullname:function(){//arrow function me [this] kaam nhi krta
+                console.log(this.fname,this.lname);
+            },
+            marks:{
+                physics:85,
+                maths:75,
+                chemistry:60,
+            }
+        },
+        {
+            id:103,
+            fname :"rohit",
+            lname:"kohli",
+            age:19,
+            city:"udaipur",
+            mobile:123456789,
+            skills:["c","c++","python","mern"],
+            fullname:function(){//arrow function me [this] kaam nhi krta
+                console.log(this.fname,this.lname);
+            },
+            marks:{
+                physics:85,
+                maths:75,
+                chemistry:60,
+            }
+        }
+        ]
+
+        // console.log(array_obj);
+        // for(let i of array_obj){
+        //     // console.log(i.id,i.fname,i.age,i.city,i.mobile);
+        // }
+
+        // let x = array_obj.filter((item)=>item.age>18)
+        let y = array_obj.filter((item)=>(((item.marks.physics+item.marks.maths+item.marks.chemistry)*100)/300)>75)
+
+        
+        console.log(y);
+    </script>
+</body>
+</html>

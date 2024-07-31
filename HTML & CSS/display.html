@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            display: inline-block; 
+            margin: 5px;
+        } */
+
+        /* type 4 css */
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 2px;
+            flex-grow:1 ; /*it removes all the unnecessary space or gap */
+        } 
+
+        .container{
+            display: flex; 
+            /*these all properties work after applying diplay flex */
+            /* justify-content: center; left-right center */
+            /* align-items: center; top-bottom center */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; equal space distribution */
+            /* justify-content: space-around; mix of space of left and right */
+            height: 100vh; /*min-height se apne aap height bdhti jaaegi jitna content hoga */
+            background-color: black;
+            flex-wrap: wrap;/* it divide the child boxes on the basis of parent width */
+            /* flex-direction: column; it maintain the box in coloumn vertical-line  and this flex property inter change the properties of justify content: centre and align items center */
+
+            flex-direction: column; /* in this the second div will vertical line */
+            
+             
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- 
+    Display types are 5:
+    1 block -> it is by default set,it take all width
+    2 inline -> it's width and height depend only on content   
+    3 inline-block -> it takes only given height, width and  
+    4 flex -> /* it apply on parent box for control child box */
+    5 grid 
+-->
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> 
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> 
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> 
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>

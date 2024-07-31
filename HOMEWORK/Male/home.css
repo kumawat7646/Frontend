@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sign-up CSS */
+
+.sign-up{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+}
+#sign-h6{
+    color: white;
+    margin-left: -50px;
+    margin-top: -145px;
+    letter-spacing: 1px;
+}
+/* .sign-box{
+    color:blue;
+
+} */
+
+
+/* header CSS */
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    margin: 30px;
+    margin-left: 70px;
+}
+
+.nav-items{
+    display: flex;
+    margin-left: 13%;
+    
+}
+
+.logo-a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 32px 25px;
+    cursor: pointer;
+}
+#home{
+    text-decoration:underline 2px red ;
+
+}
+
+.logo-cart{
+    height: 80px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+/* slidecontainer CSS */
+.slidecontainer{
+    height: 600px;
+    width: 100%;
+    background-image: url(/homeimg/hero-1.jpeg);
+    background-size:cover ;
+    
+}
+.slidecontainer h6{
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;;
+    letter-spacing: 4px;
+    padding-left: 120px;
+    padding-top: 160px;
+    position: absolute;
+}
+.slidecontainer h1{
+    font-family:  "Nunito Sans", sans-serif;
+    letter-spacing: 2px;
+    font-size: 45px;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 200px;
+}
+#h1-2{
+    margin-top: 250px;
+}
+
+.slidecontainer p{
+    margin-left: 120px;
+    position: absolute;
+    color: rgb(65, 63, 63);
+    margin-top: 320px;
+}
+#p2{
+    margin-top: 345px;
+}
+
+button{
+    cursor: pointer;
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    background-color: rgb(21, 20, 20);
+    color: white;
+    letter-spacing: 4px;
+    margin-left: 120px;
+    margin-top:390px;
+    padding-right: 20px;
+    position: relative;
+}
+
+/* banner CSS */
+
+.banner{
+    height: 1008px;
+    width: 100%;
+    display: flex;
+}
+
+.clothing{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-image: url(/homeimg/banner-1.jpeg);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    margin-right: 180px;
+    margin-top: 90px;
+}
+
+.shoes{
+    height: 400px;
+    width: 400px;
+    background-image: url(/homeimg/banner-2.jpeg);
+    background-size: contain;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 420px;
+}
+
+.accessories{
+    height: 400px;
+    width: 450px;
+    background-image: url(/homeimg/banner-3.jpeg);
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    margin-right: 110px;
+    margin-top: 600px;
+}
+
+#h-1{
+    position: absolute;
+    margin-left: 475px;
+    font-size: xx-large;
+    font-style: 20px;
+    margin-top: 200px;
+    letter-spacing: 2px;
+}
+
+.banner-a{
+    color: black;
+    text-decoration: none;
+    letter-spacing: 5px;
+    padding: 32px 25px;
+    cursor: pointer;
+}
+
+#h-1a{
+    text-decoration:underline 2px   black ;
+    margin-left: 450px;
+    margin-top:260px;
+    position: absolute;
+}
+
+#h-2{
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 530px;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+#h-2a{
+    text-decoration:underline 2px   black ;
+    position: absolute;
+    margin-left: 505px;
+    margin-top: 755px;
+} 
+
+#h-3{
+    position: absolute;
+    font-size: xx-large;
+    margin-top: 850px;
+    margin-left: 75px;
+    
+    letter-spacing: 2px;
+}
+#h-3a{
+    position: absolute;
+    text-decoration:underline 2px   black ;
+    margin-left: 49px;
+    margin-top: 868px;
+    
+} 
+
+/* Product CSS */
+
+.product{
+    height: 700px;
+    width: 100%;
+    border:1px solid black;
+    display: flex;
+}
+
+.prod{
+    height: 250px;
+    width: 350px;
+    border: 1px solid black;
+}
+
+/* Sale CSS */
+
+.sale{
+    height: 580px;
+    width: 100%;
+    background-color: rgb(243, 242, 238);
+    display: flex;
+}
+
+.sale-box{
+    height: 280px;
+    width: 280px;
+    background-color: white;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: -5%;
+}
+.sale_text{
+    width: 230px;
+    height: 280px;
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 100px;
+}
+.sale_text h2{
+    padding-left: 25px;
+    padding-top: 45px;
+    letter-spacing: 2px;
+}
+#sale-box-h2{
+    color:#b7b7b7 ;
+}
+
+.sale-price{
+    height: 90px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding-left: 21px;
+    padding-top: 27px;
+    border-radius: 50%;
+    margin-left: 615px;
+    margin-top:145px; ;
+}
+
+.sale-img{
+    height: 260px;
+    width: 300px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 180px;
+}
+
+#sale-h6{
+    padding-left: 820px;
+    color: red;
+    margin-top: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;;
+    letter-spacing: 4px;
+}
+#sale-h2{
+    position: absolute;
+    padding-left: 820px;
+    padding-top: 220px;  
+    font-size: xx-large;
+    letter-spacing: 3px;
+}
+
+.sale button{
+    margin-top: 420px;
+    right: 225px;
+}
+
+/* Instagram Css */
+.instagram{
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.insta_grid{
+    height: 500px;
+    width: 700px;
+    position: absolute;
+    margin:50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#insta_img1{
+    background-image: url(/homeimg/instagram-1.jpeg);
+    background-size: cover;
+}
+#insta_img2{
+    background-image: url(/homeimg/instagram-2.jpeg);
+    background-size: cover;
+}
+#insta_img3{
+    background-image: url(/homeimg/instagram-3.jpeg);
+    background-size: cover;
+}
+#insta_img4{
+    background-image: url(/homeimg/instagram-4.jpeg);
+    background-size: cover;
+}
+#insta_img5{
+    background-image: url(/homeimg/instagram-5.jpeg);
+    background-size: cover;
+}
+#insta_img6{
+    background-image: url(/homeimg/instagram-6.jpeg);
+    background-size: cover;
+}
+
+.insta_text{
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    right: 120px;
+    margin-top: 180px;
+}
+.insta_text h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+}
+.insta_text p{
+    color: rgb(65, 63, 63);
+    padding-top: 30px;
+    line-height: 22px;
+}
+#insta-h2{
+    color: red;
+    padding-top: 50px; ;
+}
+
+/* News */
+.news{
+    height: 600px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: powderblue;
+}
+
+.news h6{
+    color: red;
+    letter-spacing: 2px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 47%;
+    padding-top:10px;
+}
+.news h1{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    padding-left: 40%;
+    padding-top: 20px;
+}
+
+.news_img{
+    height: 260px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    margin-top: 50px;
+    
+}
+.news-img{
+    height: 250px;
+    width: 350px;
+    border: 1px;
+}
+#news_img1{
+    background-image: url(/homeimg/blog-1.jpeg);
+    background-size: cover;
+    margin-left: 70px;
+}
+#news_img2{
+    background-image: url(/homeimg/blog-2.jpeg);
+    background-size: cover;
+    margin-left: 55px;
+}
+#news_img3{
+    background-image: url(/homeimg/blog-3.jpeg);
+    background-size: cover;
+    margin-left: 50px;
+}
+
+/* Blog */
+
+.blog_news h4{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}

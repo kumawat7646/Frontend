@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="text" name="" id="">
+    <button id="submit">Submit</button>
+    <button id="print">Print</button>
+
+
+    
+    <script>
+
+        /*
+            let a =10;
+            console.log(`my age is ${a}`);
+         */
+
+        /*
+            let i=1
+            setInterval(()=>{
+                if(i==5){
+                    clearInterval(i)
+                }
+                else{
+                document.write(i);
+                ++i}
+            },1000)
+         */
+        
+// let i =0;
+//         setInterval(()=>{ 
+//             i++;
+//             console.log(i);
+//         },1000)
+
+        /*
+            let i =1;
+                setInterval(()=>{// setInterval ko time se aae to use lete h or time lete h;
+                {
+                    
+                    if(i==11){
+                        clearInterval(i) // clearInterval rokne ke lie kaam me lete h
+                    }
+                    
+                    else{
+
+                        document.write(`2 x ${i} = ${2*i}`,'<br>' );
+                        i++
+                    }
+                }
+                },1000)//1000=1sec
+        */
+
+        /*
+
+            setTimeout(()=>{//setTimeout me ye kaam etne time me complete hona chahiye or sirf ek baar hi hona chahiye;
+                console.log("heelo");
+            },1000).
+
+        */
+// --------------------------------------------------------------------------------------------
+        
+        /*STATIC ARRAY
+            let arr = [10,20,30,40,50]
+            
+            // for(let i of arr)
+            // console.log(i);
+            let counter = 0;
+            setInterval(()=>{
+                console.log(arr[counter]);
+                counter++;
+            },1000)
+        */
+
+// --------------------------------------------------------------------------------------------
+        /*USERdEFINED ARRAY
+        
+            let arr = [];
+
+            document.querySelector("#submit").onclick = () =>{
+
+                let val = document.querySelector("input").value
+                document.querySelector("input").value = ''
+                document.querySelector("input").focus()
+                arr.push(val)
+            }
+
+            document.querySelector("#print").onclick = function(){
+                console.log(arr);
+            }
+        */
+        
+
+
+
+
+    </script>
+</body>
+</html>

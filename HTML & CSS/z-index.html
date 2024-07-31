@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .container{
+            height: 70vh;
+            width: 50%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            position: absolute;
+        }
+        .box:nth-child(1){
+            background-color: red;
+            left: 0px;
+            z-index: 1;
+        }
+        .box:nth-child(2){
+            background-color: green;
+            right: 0px;
+        }
+        .box:nth-child(3){
+            background-color: yellow;
+            top: 0px;
+        }
+        .box:nth-child(4){
+            background-color: blue;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!-- z-index ka mtlab hota h koi bhi div ko upar rkhna or jiski sbse jyada z-index rhegi vo sbse upar rhega -->
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

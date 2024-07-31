@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data to console</title>
+</head>
+<body>
+    <body>
+
+
+        <!-- use of class -->
+
+        
+        Name :<input type="text" placeholder="enter your name" class="inp"><br><br>
+        Email :<input type="email" placeholder="enter your email" class="inp"><br><br>
+        Mobile :<input type="number" placeholder="enter your number" class="inp"><br><br>
+        Password :<input type="password" placeholder="enter your password" class="inp"><br><br>
+        <button id="submit">Submit</button>
+    
+        <script>
+            document.getElementById("submit").onclick = function(){
+                let val = document.getElementsByClassName("inp");
+                /*for(let i=0;i<val.length;i++) //simple for loop
+                // val.length= jitne bhi elements h val ke vo sb cover hojaenge
+                {
+                    console.log(val[i].value);   
+                    // [] eske andr index value aati h 
+
+
+                }*/
+                 /*for(let i of val) //=> for of loop
+                 {
+                    console.log(i.value);
+                 }*/
+
+                 /*for( let i in val) //=>for in loop -> indexing value print krta h
+                 {
+                    console.log(val[i].value);
+                 }*/
+                
+            }
+        </script>
+    </body>
+</body>
+</html>

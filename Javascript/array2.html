@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--  
+        <input type="text" >
+        <button id="push">PUSH</button>
+        <button id="pop">POP</button>
+        <button id="length">length</button>
+        <h1></h1>
+        <p></p> 
+    -->
+
+    <script>
+        // push =>            (ye data ko ek-ek krke array ke andr dalta h)
+
+        // pop =>             (ye data ko ek-ek krke array se bhar nikalta h [jo sbse last me dalta h vo sbse pehle niklta h....ye last indexing se  out krna strt krta h ])
+
+        // shift =>           (ye new data ko array ke starting indexing se bhar nikalta h [jo sbse last me dalta h vo sbse pehle niklta h....ye  starting indexing se out krna strt krta h])
+        
+        // unshift =>         (ye new data ko array ke starting indexing pe dalta h )
+
+    // ----------------------
+        // splice =>          (starting indexing,total remove count,add data)
+        
+        // slice =>           (starting indexing,ending indexing)[always go left to right in array][it never includes ending point][it is always in console.log()]
+    // ----------------------
+    
+        // map  =>            (eske andr apn agr sbke saath kuch arithmatical krna h jese agr apn [+1,*2] krde to vo saare array ke saath hojaega)  
+
+        // filter  =>         (ye condition ke hisab se array ke data ko filter krta h or phir jo condition se match hoga vo output me aaega )
+        
+        // reduce  =>         (ye puri array ka arithmatical calculation krta h )
+
+        // split              (string se array me convert krta h)
+        
+        // join                (array to string)
+        
+        // flat(2d and 3d array ko 1d array me convert krtav h)
+
+
+
+// -------------------------------------------------------------------------------------------------        
+        /*
+            let arr = [];
+            document.querySelector("#push").onclick = function(){
+
+                let val = document.querySelector("input").value;
+                document.querySelector("input").value= "";
+                document.querySelector("input").focus();
+                arr.push(val);                                                      // arr.unshift
+                console.log(arr);
+            }
+
+            document.querySelector("#pop").onclick = function(){
+                let val = arr.pop();                                                // arr.shift
+                document.querySelector("h1").innerHTML +=val + " ";
+            }
+
+            document.querySelector("#length").onclick = function(){
+                document.querySelector("p").innerHTML = arr.length;
+            }
+        /*
+// ---------------------------------------------------------------------------------
+
+        // let a = [100,200,3000,40,50,60,70,90,158,966,458,63]
+        // // a.splice(0,4)
+        // console.log(a.slice(-2,-9));//slice always print in console log
+
+// ---------------------------------------------------------------------------------
+
+        
+        /*
+        let a = [1,2,3,4,5,6]
+        let b = a.reduce((x,y)=>{
+            return x+y;
+        })
+
+        let c = a.filter((item)=>{
+            return item>3;
+        })
+
+        let d= a.map((item)=>{
+            return item+2;
+        })
+        */
+
+// -------------------------------------------------------------------------------------
+
+        // let a = "10,20,30,40,50,60";
+        // let b = a.split(",");
+        // // console.log(b);
+
+        // console.log(b.join(","));
+
+// ------------------------------------------------------------------------------
+
+        let x = [10,20,[50,60,70],30,40,[80,90,200]];
+        // console.log(x);
+        console.log(x.flat()[4]);//2d array ke lie
+        console.log(x.flat(2)[4]);//3d array ke lie
+        console.log(x.flat(3)[4]);//4d array ke lie
+    </script>
+</body>
+</html>

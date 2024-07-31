@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .container{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            transition-property: backgroud,height;
+            transition-duration: 2s;
+        }
+
+        .container:hover{
+            background-color: yellow;
+            cursor: pointer;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- transection is mostly used for hover properties -->
+
+    <div class="container"></div>
+    
+
+</body>
+</html>

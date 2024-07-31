@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POsition CSSt</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            font-size: 50px;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        #box2{
+            background-color: yellow;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 5 types of POsition :
+
+        1 static -> default position of any div
+        2 relative -> it can move anywhere you want but form his position but it can'nt left his orignal position, his orignal position always kept that position as a blank space 
+        3 absolute -> leave his position, and it can move anywhere from the parent position not from his old position...and if a div-box is in     a div-container and we applied absolute in box then that box work on the screen-parent and if we want to work as a container-parent then we have to applied position-relative in container
+        4 fixed -> it also left his position but when you apply his position, he always fixed there you scroll the site his position remain fixed on screen  
+        5 stickey -> in this positon....like we adjust his position on the bottom and when we scroll down it moves to upward and when it connect to top-screen then he stickes like chipak jaaega  upar top of the screen pe and jb apn down scroll then he set on the orignal position
+    -->
+
+    <div class="box">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    
+</body>
+</html>
