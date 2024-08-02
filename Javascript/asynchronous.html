@@ -6,6 +6,63 @@
     <title>Asynchronous</title>
 </head>
 <body>
+
+    <script>
+        //   console.log("One");
+        //   console.log("Two");
+        //   console.log("Three");
+
+        //   setTimeout(() => {           // 
+        //     for (let i = 0; i < 400; i++) {
+        //       console.log(i);
+        //     }
+        //   }, 1000);
+
+        //   console.log("Four");
+        //   console.log("Five");
+        //   console.log("Six");
+    
+    
+    // callback (se nikla)==> callback hell (esko theek krne ke lie)--> promise (se nikla) ==> promise chain(esko theek krne ke lie)--> aysnc await
+
+        // function Food(dish,order){
+        //     setTimeout(()=>{
+        //         console.log(dish);
+        //         if(order){
+        //             order();
+        //         }
+        //     },3000)
+        // }
+
+        // Food("pizza",()=>{               //esme baar baar call krna pd rha tha esliye ye ek hell ki trh hogyi
+        //     Food("burger",()=>{
+        //         Food("cold drink")
+        //     });
+        // });
+
+
+        //Promise(ye jb aae tb apne 3 states leke aae[ya to promise complete/pending/reject])
+            let prom = new Promise((resolve,reject)=>{ //resolve or reject apne aap me hi callBack function h [nam kuch bhi rkh skte ho lekin pehla parameter resolve ke lie hoga or dusra reject ke lie hi hoga]
+                if(true){
+                    resolve("promise pura hua")
+                }
+                else{
+                    reject("promise adhura rha")
+                }
+                // agr promise fullfill hojata h to use handel krta h [.then] function
+                // agr promise reject hojata h to use handel krta h [.catch] function
+                
+            })
+            // console.log(prom);
+
+            prom.then((response)=>{     //ye   data ko promise object se bhar laane ke lie krte h
+                console.log(response);
+            }).catch((error)=>{
+                console.log(error);
+            })
+
+
+    </script>
     
 </body>
 </html>

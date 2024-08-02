@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" name="" id=""> --> 
+     <h1>this is my tag</h1>
+    <button>button</button>
+    <script>
+        
+        /*
+        let btn = document.querySelector("button");
+        let title = document.querySelector("h1");
+
+        btn.addEventListener("click",function(){
+            // title.style.color="red"
+            // btn.style.backgroundColor="red"
+
+        })
+        */
+
+        // <!--React syntax-->
+        let btn = document.querySelector("button");
+
+        btn.addEventListener("click",function(event){ //jispe click krr rhe ho sirf usi pe hi kaam krega ye function
+            //console.log(event);//jb hm event ko console me print krenge to button ki saari info. event me store hojaegi object ke tor prr
+            // console.log(event.target);
+            event.target.style.color = "red";
+        })
+        
+
+    </script>
+</body>
+</html>
