@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/826348c2-cdcb-42a0-bc11-a788478ba5a2/6d20b198-e7ab-4e9f-a1aa-666faa0298f9/IN-en-20240729-POP_SIGNUP_TWO_WEEKS-perspective_WEB_a67d8c9e-8121-4a74-98e4-8005eb2df227_large.jpg');
+}
+
+.header{
+    height: 80px;
+    width: 100%; 
+}
+.logo{
+    height: 60px;
+    width: 100px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+/* login form css */
+.login_form{
+    height: 450px;
+    width: 380px;
+    background-color: black;
+    margin-left: 35%;
+    margin-top: 50px;
+color: white;
+    opacity: 0.8;
+}
+
+.login_form h1{
+    color: white;
+    padding-left: 35px;
+    padding-top: 30px;
+
+}
+
+form input{
+    height: 50px;
+    width: 300px;
+    padding-left: 20px;
+    opacity: 0.8;
+    background-color: rgb(48, 45, 45);
+    color: white;   
+    margin: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 35px;
+}
+
+#submit{
+    padding-right: 30px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.login_form h5{
+    color: white;
+    margin-left: 45%;
+    margin-top: 15px;
+}
+
+.login_form button{
+    height: 50px;
+    width: 300px;
+    opacity: 0.8;
+    background-color: rgb(48, 45, 45);
+    color: white;   
+    margin: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+#forgot{
+    margin-left: 36%;
+    cursor: pointer;
+}
+
+#checkbox{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.login_form h4{
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+#sign{
+    margin-top: -18px;
+    margin-left: 120px;
+    cursor: pointer;
+}
+
+#sign :hover{
+    border-bottom: 1px solid white;
+}
+
+.login_form p{
+    margin-top: 20px;
+    font-size: small;
+    color: grey;
+    margin-left: 35px;
+}
+
+
+/* footer */
+.footer{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    margin-top: -20px   ;
+    color: grey;
+}
+
+.footer p{
+    padding-top: 300px;
+    padding-left: 110px;
+}
+
+.number{
+    margin-top: -318px;
+    margin-left: 110px;
+}
+
+.number:hover{
+    cursor: pointer;
+}
+
+.links{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.links a{
+    color: grey;
+}
+
+select{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(48, 45, 45);
+    opacity: 0.8;
+    color: white;
+    margin-left: 105px;
+    margin-top: 50px;
+    border-radius:5px ;
+}
