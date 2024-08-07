@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .header-1 {
+            background-color: rgb(247, 247, 247);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-1 ul {
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+
+        }
+
+        .header-1 ul li {
+            margin: 10px;
+            font-size: 11px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .header-1 ul li a:hover {
+            color: rgb(7, 192, 7);
+            cursor: pointer;
+        }
+
+        .header-2 {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .shopcategory {
+
+            position: absolute;
+            top: 40px;
+            left: 500px;
+            background: white;
+            z-index: 1000;
+            flex-direction: column;
+            visibility: hidden;
+            width: 210px;
+
+        }
+
+        .shopcategory li {
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+
+        .shop:hover .shopcategory {
+            visibility: visible;
+            z-index: 1000;
+            position: absolute;
+
+        }
+
+        .shop_a:hover {
+            color: rgb(7, 192, 7);
+        }
+
+        .sub-menu a:hover {
+            background-color: #71cd14;
+            color: white;
+        }
+
+        .hover:hover{
+            color: #71cd14;
+        }
+
+        .blog {
+            position: absolute;
+            top: 40px;
+            left: 575px;
+            background: white;
+            z-index: 1;
+            flex-direction: column;
+            visibility: hidden;
+            width: 210px;
+        }
+
+        .blog li {
+            text-transform: uppercase;
+
+        }
+
+        .blog_a:hover .blog {
+            visibility: visible;
+
+        }
+
+        .page {
+            position: absolute;
+            top: 40px;
+            left: 655px;
+            background: white;
+            z-index: 1;
+            flex-direction: column;
+            visibility: hidden;
+            width: 210px;
+        }
+
+        .page li {
+            text-transform: uppercase;
+        }
+
+        .page_a:hover .page {
+            visibility: visible;
+        }
+
+        .right ul li a i:hover {
+            color: #71cd14;
+        }
+
+
+        @media (max-width:1200px) {
+            .header-2 .center {
+                display: none;
+            }
+
+            .header-2 .right {
+                display: none;
+            }
+
+            .header-1 {
+
+                display: none;
+            }
+        }
+
+        .left {
+            margin: 25px 70px;
+        }
+
+        .header-2 ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .center ul {
+            margin: 15px;
+        }
+
+        .center li {
+            margin: 25px;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+
+
+        .right ul {
+            margin: 25px 70px;
+        }
+
+        .right ul li {
+            margin: 10px;
+        }
+
+
+    .b1 {
+        width: 10%;
+        margin-left: 135px;
+        padding: 20px;
+    }
+
+    .b2 {
+        position: absolute;
+        left: 30%;
+        top: 0%;
+        padding: 30px;
+    }
+
+    .b2 ul li {
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 40px;
+    }
+
+    .b3 {
+        position: absolute;
+        width: 20%;
+        left: 80%;
+        top: 20%;
+    }
+
+    .b3 span {
+        margin-left: 10px;
+    }
+
+    .box1 {
+        position: relative;
+        background-color: #f6f6f6;
+        height: 200px;
+    }
+
+    .box1a {
+        position: absolute;
+            top: 30%;
+            left: 8%;
+            line-height: 2;
+    }
+
+    .box1b {
+        position: absolute;
+        top: 38%;
+        left: 78%;
+        color: grey;
+    }
+
+    #x1 {
+        height: 100px;
+    }
+
+    @media (min-width:1000px) {
+        .main {
+            max-width: 1200px;
+            margin-left: 100px;
+            display: grid;
+            grid-template-columns: 4fr 4fr;
+            column-gap: 90px;
+            margin-right: 100px;
+        }
+    }
+
+    .main1 {
+        height: 600px;
+        background-color: white;
+    }
+
+    .main11 {
+        position: relative;
+
+    }
+
+    .main11 img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .innermain1 {
+        height: 100px;
+        margin-top: 65px;
+    }
+
+    .innermain2 {
+        position: relative;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .innermain22 {
+        font-size: 13px;
+        color: rgb(72, 72, 72);
+    }
+
+    .innermain23 {
+        position: absolute;
+        left: 13%;
+        top: 0%;
+    }
+
+    .line1 p {
+        margin-left: 1px;
+        margin-top: 30px;
+        color: rgb(100, 100, 100);
+        font-size: 14.8px;
+        line-height: 1.5;
+    }
+
+    #quantity {
+        margin-left: 10px;
+        width: 70px;
+        padding: 5px;
+    }
+
+    .cart {
+        height: 40px;
+        width: 291px;
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr;
+        column-gap: 18px;
+    }
+
+    .s1 {
+        height: 40px;
+    }
+
+    .s1 button {
+        height: 40px;
+        width: 100%;
+        background-color:#71cd14 ;
+        color: white;
+        border: none;
+        font-size: 12px;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+    .s1 button:hover{
+        border: 1px solid #71cd14;
+        background-color: white;
+        color: #71cd14;
+
+    }
+
+    .s2 {
+        background-color: rgb(227, 233, 231);
+        text-align: center;
+    }
+
+    .s2 i {
+        margin-top: 12px;
+    }
+    .box3{
+        height: 600px;
+        margin-top: 50px;
+        border: 1px solid gray;
+    }
+    @media (min-width:1000px) {
+        .box3 {
+            max-width: 1200px;
+            margin-left: 100px;
+            display: grid;
+            grid-template-rows: 1fr 6.5fr;
+            margin-right: 100px;
+        }
+    }
+    .box31{
+        height: 70px;
+        width: 100%;
+        background-color: rgb(243, 246, 248);
+        
+    }
+    .box32{
+        
+        width: 100%;
+        height:  100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* visibility: hidden; */
+    }
+    .box33{
+        height: 100%;
+       margin: 20px;
+       
+    }
+    .box34{
+        height: 100%;
+        
+    }
+    .btn{
+        margin-top: 20px;
+        margin-left: 120px;
+        height: 30px;
+        width: 100px;
+        background-color: white;
+        border: none;
+    }
+    
+    .btn:hover{
+        background-color:#71cd14; 
+        color: white;
+    }
+    .input{
+        margin-top: 20px;
+        height: 40px;
+        width: 480px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    textarea{
+        margin-top: 20px;
+        height: 50px;
+        width: 480px;
+        border-radius: 5px;
+    }
+    #submit{
+        margin-top: 20px;
+        margin-left: 330px;
+        height: 40px;
+        width: 150px;
+        background-color: #71cd14;
+        color: white;
+        border: none;
+        border-radius: 2px;
+    }
+    #submit:hover{
+        background-color: white;
+        color: #71cd14;
+        border: 1px solid #71cd14 ;
+    }
+    .box33 p{
+        font-size: 13px;
+        line-height: 2;
+        margin-top: 10px;
+        color: gray;
+    }
+
+    .footer{
+    height: 100vh;
+    width: 100%;
+    background-color: #0d0d1f;
+    margin-top: 150px;
+    position: relative;
+}
+.footer1{
+    position: absolute;
+    margin-top: 120px;
+
+}
+.footer .mul ul{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 250px;
+    color: white;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    flex-wrap: wrap;
+
+}
+.footer .mul1 ul{
+    position: absolute;
+    color: #797979;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 3;
+    margin-left: 100px;
+}
+.footer .mul2 ul{
+    position: absolute;
+    color: #797979;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 3;
+    margin-left: 300px;
+}
+.footer .mul3 ul{
+    position: absolute;
+    color: #797979;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 3;
+    margin-left: 480px;
+}
+.footer .mul4 ul{
+    color: #797979;
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 3;
+    margin-left: 650px;
+    
+}
+.footer .mul5 {
+    color: #797979;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-left: 830px;
+    margin-top: -12.50%;
+}
+.subs{
+    margin-left: 45%;
+    margin-top: -10.3%;
+    font-family: sans-serif;
+    
+}
+.copyright{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 8.2%;
+    flex-wrap: wrap;
+}
+.copyright span{
+    font-size: 13px;
+}
+.icon{
+    color: white;
+    margin-left: 70%;
+    margin-top: -28px;
+}
+
+</style>
+</head>
+
+
+<body>
+    <div class="header-1">
+        <div>
+            <ul>
+                <li>PHONE: +01 256 25 235 </li>
+                <li>|</li>
+                <li>EMAIL: INFO@EISER.COM</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">GIFT CARD</a></li>
+                <li>|</li>
+                <li><a href="">TRACK ORDER</a></li>
+                <li>|</li>
+                <li><a href="">CONTACT US</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="header-2">
+        <div class="left">
+            <img src="https://themewagon.github.io/eiser/img/logo.png" alt="">
+        </div>
+        <div class="center">
+            <ul>
+                <li><a href="eiser.html" style="color: #71cd14;">HOME</a></li>
+                <li class="shop"><a href="" class="hover">SHOP</a>
+                    <ul class="shopcategory">
+                        <li class="sub-menu"><a href="shopcategory.html">shop category</a></li>
+                        <hr>
+                        <li class="sub-menu"><a href="productdetails.html">product details</a></li>
+                        <hr>
+                        <li class="sub-menu"><a href="productcheckout.html">product checkout</a></li>
+                        <hr>
+                        <li class="sub-menu"><a href="">shopping cart</a></li>
+                    </ul>
+                </li>
+                <li class="blog_a"><a href="" class="hover">BLOG</a>
+                    <ul class="blog">
+                        <li><a href="">blog</a></li>
+                        <hr>
+                        <li><a href="">blog details</a></li>
+                    </ul>
+                </li>
+                <li class="page_a"><a href="" class="hover">PAGES</a>
+                    <ul class="page">
+                        <li><a href="" >tracking</a></li>
+                        <hr>
+                        <li><a href="">elements</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="hover">CONTECT</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-user"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="box1a">
+            <h2>Product Details</h2>
+                <p style="color:gray; font-size: 14px;">Very us move be blessed multiply night</p>
+        </div>
+        <div class="box1b">
+            <span>Home</span>
+            <span>/</span>
+            <span>Product Details</span>
+            
+        </div>
+    </div>
+    <div class="box2" id="x1"></div>
+    <div class="main">
+        <div class="main1">
+            <div class="main11"><img src="https://themewagon.github.io/eiser/img/product/single-product/s-product-1.jpg" alt=""></div>
+        </div>
+        <div class="main1">
+            <div class="innermain1">
+                <h2>Faded SkyBlu Denim Jeans</h2><br>
+                <h2 style="color: lightgreen;">$149.99</h2><br>
+                <div class="innermain2">
+                    <div class="innermain22">
+                        <p>Category</p><br>
+                        <p>Availibility</p><br>
+                        <div class="innermain23">
+                            <p style="color: #71cd14;">:Household</p><br>
+                            <p>:In stock</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="line1">
+                    <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking
+                        for something that can make your interior look awesome, and at the same time give you the
+                        pleasant warm feeling during the winter.</p>
+                    <br><br><br>
+                </div>
+                <div class="quantity">
+                    <label for="quantity" style="color: rgb(58, 57, 57);">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="100" value="1"><br><br><br>
+                </div>
+                <div class="cart">
+                    <div class="s1">
+                        <button type="submit">Add to Cart</button>
+                    </div>
+                    <div class="s2">
+                        <i class="fa-solid fa-diamond"></i>
+                    </div>
+                    <div class="s2"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="box3">
+            <div class="box31">
+                <button class="btn">Description</button>
+                <button class="btn">Specification</button>
+                <button class="btn" id="comments">Comments</button>
+                <button class="btn">Reviews</button>
+            </div>
+            <div class="box32">
+                <div class="box33">
+                    <img src="https://themewagon.github.io/eiser/img/product/single-product/review-1.png" alt="" class="img">
+                    <!-- <h3>Blake Ruiz</h3> -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                    <img src="https://themewagon.github.io/eiser/img/product/single-product/review-2.png" alt="" class="img">
+                    <!-- <h3>Blake Ruiz</h3> -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                    <img src="https://themewagon.github.io/eiser/img/product/single-product/review-3.png" alt="" class="img">
+                    <!-- <h3>Blake Ruiz</h3> -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+                    <div class="box34">
+                    <h2 style="margin-top: 20px;">Post a comment</h2>
+                    <input type="text" placeholder="your full name" class="input">
+                    <input type="email" placeholder="Email address" class="input">
+                    <input type="number" placeholder="Phone Number " class="input">
+                    <textarea name="Message" id=""></textarea>
+                    <button id="submit">Submit Now</button>
+                
+                </div>
+            </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+        <div class="mul">
+            <ul>
+                <li>Top Products</li>
+                <li>Quick Links</li>
+                <li>Features</li>
+                <li>Resources</li>
+                <li>Newsletter</li>
+            </ul>
+            </div>
+            <div class="mul1">
+            <ul>
+                <li>Managed Website</li>
+                <li>Manage Reputation</li>
+                <li>Power tools</li>
+                <li>Marketing Service</li>
+            </ul>
+            </div>
+            <div class="mul2">
+            <ul>
+                <li>Jobs</li>
+                <li>Brand Assets</li>
+                <li>Investor Relations</li>
+                <li>Terms of Service</li>
+            </ul>
+            </div>
+            <div class="mul3">
+            <ul>
+                <li>Jobs</li>
+                <li>Brand Assets</li>
+                <li>Investor Relations</li>
+                <li>Terms of Service</li>
+            </ul>
+            </div>
+            <div class="mul4">
+            <ul>
+                <li>Guides</li>
+                <li>Research</li>
+                <li>Experts</li>
+                <li>Agencies</li>
+            </ul>
+            </div>
+            <div class="mul5">
+            <span style="color: #797979;">You can trust us. we only send promo offers,</span>
+            <input type="email" placeholder="Your Email Address" style="padding: 20px 40px; background-color: rgba(255,255,255,0.15); margin-top: 8%; border: none;">
+            <div class="subs">
+                <button style="background-color: #71cd14; color: white; padding: 3.5%;">SUBSCRIBE</button>
+            </div>
+            </div>
+            <div class="copyright">
+            <span>Copyright ©2024 All rights reserved | This template is made with <i class=" fa-regular fa-heart"></i> by <span style="color: #71cd14;">Colorlib</span></span>
+            
+            </div>
+            <div class="icon">
+            <i style="margin-right: 2%; height: 40px ;width: 40px; background-color: rgba(255,255,255,0.15); text-align: center; padding: 10px;" class="fa-brands fa-facebook-f"></i>
+            <i style="margin-right: 2%; height: 40px ;width: 40px; background-color: rgba(255,255,255,0.15); text-align: center; padding: 10px;"  class="fa-brands fa-twitter"></i>
+            <i style="margin-right: 2%;height: 40px ;width: 40px; background-color: rgba(255,255,255,0.15); text-align: center; padding: 10px;"  class="fa-solid fa-earth-americas"></i>
+            <i style="margin-right: 2%;height: 40px ;width: 40px; background-color: rgba(255,255,255,0.15); text-align: center; padding: 10px;"  class="fa-brands fa-square-behance"></i>
+            </div>
+            </div>
+            </div>
+
+           
+</body></html>

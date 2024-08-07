@@ -233,6 +233,7 @@ button{
     width: 100%;
     background-color: rgb(243, 242, 238);
     display: flex;
+    margin-top: 100px;
 }
 
 .sale-box{
@@ -280,10 +281,10 @@ button{
     margin-top: 180px;
 }
 
-#sale-h6{
+.sale h6{
     padding-left: 820px;
     color: red;
-    margin-top: 25px;
+    padding-top: 180px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 12px;;
     letter-spacing: 4px;
@@ -297,8 +298,9 @@ button{
 }
 
 .sale button{
-    margin-top: 420px;
-    right: 225px;
+    margin-top: 350px;
+    right: 275px;
+    padding-left: 25px;
 }
 
 /* Instagram Css */
@@ -368,7 +370,7 @@ button{
     height: 600px;
     width: 100%;
     margin-top: 50px;
-    background-color: powderblue;
+    /* background-color: powderblue; */
 }
 
 .news h6{
@@ -390,7 +392,7 @@ button{
 .news_img{
     height: 260px;
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     margin-top: 50px;
     
@@ -421,4 +423,115 @@ button{
 .blog_news h4{
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
+}
+
+
+
+/* footer CSS */
+
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: #111111;
+}
+
+.footer-logo{
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 60px;   
+}
+
+.footer-p{ 
+    color:  #b7b7b7;
+    line-height: 24px;
+    letter-spacing: 1;
+    font-size: 13px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 340;
+    margin-left: 57px;
+    margin-top: -10px;
+}
+
+.pay-img{
+    margin-left: 57px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.footer-h2-1{
+    color:aliceblue;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 430px;
+    margin-top: -170px;
+    letter-spacing: 1px;
+}
+
+#p1{
+    margin-left: 0px;
+    margin-top: 13px;
+    color:  #b7b7b7;
+}
+.footer-h2-2{
+    color:aliceblue;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 670px;
+    margin-top: -170px;
+    letter-spacing: 1px;
+}
+
+#p2{
+    margin-left: 670px;
+    margin-top: 13px;
+    color:  #b7b7b7;
+}
+
+.footer-h2-3{
+    color:aliceblue;
+    font-weight: 300;
+    font-size: medium;
+    font-family: "Nunito Sans", sans-serif;
+    margin-left: 970px;
+    margin-top: -167px;
+    letter-spacing: 1px;
+}
+
+#p-ls{
+    margin-left: 970px;
+    margin-top: 13px;
+}
+
+#footer-mail{
+    background-color: #111111;
+    border: none;
+    text-decoration: underline 2px white;
+    width: 250px;
+    margin-left: 940px;
+}
+
+.hr{
+    height: 100px;
+    width: 90%;
+    margin-top: 120px;
+    margin-left: 4.5%;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+#p-hr{
+    color:  #b7b7b7;
+    margin-left: 180px;
+    padding-top: 15px; ;
+}
+
+#p-hr2{
+    color: red;
+    font-weight:700;
+    margin-left: 660px;
+    margin-top: -18px;
 }
